@@ -1,44 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A note app." />
     <title>Welcome to notes!</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--HEADER-->
     <header-bar></header-bar>
 
     <!--MAIN CONTAINER-->
     <div class="main-container">
-
-        <!--LEFT CONTAINER-->
-        <div class="left-container">
-            <note-form></note-form>
-            <div class="toggle-btn">
-                <button id="activeNotesButton">See Active Notes</button>
-                <button id="archivedNotesButton">See Archived Notes</button>
-            </div>
+      <!--LEFT CONTAINER-->
+      <div class="left-container">
+        <note-form></note-form>
+        <div class="toggle-btn">
+          <button id="activeNotesButton">See Active Notes</button>
+          <button id="archivedNotesButton">See Archived Notes</button>
         </div>
-        
-        <!--RIGHT CONTAINER-->
-        <div class="right-container">
+      </div>
 
-            <section id="activeNotesSection">
-                <div id="notesList" class="list"></div>
-            </section>
-            
-            <section id="archivedNotesSection">
-                <div id="archivedNotesList" class="list"></div>
-            </section>
+      <!--RIGHT CONTAINER-->
+      <div class="right-container">
+        <section id="activeNotesSection">
+          <div id="notesList" class="list"></div>
+        </section>
 
-        </div>
-
+        <section id="archivedNotesSection">
+          <div id="archivedNotesList" class="list"></div>
+        </section>
+      </div>
     </div>
 
     <!--FOOTER-->
     <footer-bar></footer-bar>
-
-</body>
+  </body>
 </html>
